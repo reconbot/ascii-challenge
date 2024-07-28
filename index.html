@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASCII Challenge</title>
+<style>
+    .container {
+      display: flex;
+      justify-content: center;
+      /* align-items: center; */
+      /* height: 100vh; */
+    }
+
+    .container pre {
+      margin: 0 10px;
+    }
+    .title {
+      text-align: center;
+    }
+    @media print {
+      .hidden-print {
+        display: none !important;
+      }
+    }
+    .binary-title {
+      padding-top: 16px;
+    }
+    #binary-out {
+      font-size: xx-large;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+  <body>
+    <h1 class="title">ASCII Challenge</h1>
+    <div class="container">
+      <pre>
+┌──────────┬─────┬──────┬─────────────────┐
+│  binary  │ dec │ char │ name            │
+├──────────┼─────┼──────┼─────────────────┤
+│ 00100000 │ 32  │ ' '  │ 'Space'         │
+│ 00100001 │ 33  │ '!'  │ 'Bang'          │
+│ 00100010 │ 34  │ '"'  │ 'Double quotes' │
+│ 00100011 │ 35  │ '#'  │ 'Hash'          │
+│ 00100100 │ 36  │ '$'  │ 'Dollar sign'   │
+│ 00100101 │ 37  │ '%'  │ 'Percent'       │
+│ 00100110 │ 38  │ '&'  │ 'Ampersand'     │
+│ 00100111 │ 39  │ "'"  │ 'Single quote'  │
+│ 00101000 │ 40  │ '('  │ 'Left paren'    │
+│ 00101001 │ 41  │ ')'  │ 'Right paren'   │
+│ 00101010 │ 42  │ '*'  │ 'Asterisk'      │
+│ 00101011 │ 43  │ '+'  │ 'Plus sign'     │
+│ 00101100 │ 44  │ ','  │ 'Comma'         │
+│ 00101101 │ 45  │ '-'  │ 'Hyphen'        │
+│ 00101110 │ 46  │ '.'  │ 'Period'        │
+│ 00101111 │ 47  │ '/'  │ 'Slash'         │
+│ 00110000 │ 48  │ '0'  │ 'Digit 0'       │
+│ 00110001 │ 49  │ '1'  │ 'Digit 1'       │
+│ 00110010 │ 50  │ '2'  │ 'Digit 2'       │
+│ 00110011 │ 51  │ '3'  │ 'Digit 3'       │
+│ 00110100 │ 52  │ '4'  │ 'Digit 4'       │
+│ 00110101 │ 53  │ '5'  │ 'Digit 5'       │
+│ 00110110 │ 54  │ '6'  │ 'Digit 6'       │
+│ 00110111 │ 55  │ '7'  │ 'Digit 7'       │
+│ 00111000 │ 56  │ '8'  │ 'Digit 8'       │
+│ 00111001 │ 57  │ '9'  │ 'Digit 9'       │
+│ 00111010 │ 58  │ ':'  │ 'Colon'         │
+│ 00111011 │ 59  │ ';'  │ 'Semicolon'     │
+│ 00111100 │ 60  │ '<'  │ 'Less than'     │
+│ 00111101 │ 61  │ '='  │ 'Equals sign'   │
+│ 00111110 │ 62  │ '>'  │ 'Greater than'  │
+│ 00111111 │ 63  │ '?'  │ 'Question mark' │
+│ 01000000 │ 64  │ '@'  │ 'At sign'       │
+│ 01000001 │ 65  │ 'A'  │ 'Char A'        │
+│ 01000010 │ 66  │ 'B'  │ 'Char B'        │
+│ 01000011 │ 67  │ 'C'  │ 'Char C'        │
+│ 01000100 │ 68  │ 'D'  │ 'Char D'        │
+│ 01000101 │ 69  │ 'E'  │ 'Char E'        │
+│ 01000110 │ 70  │ 'F'  │ 'Char F'        │
+│ 01000111 │ 71  │ 'G'  │ 'Char G'        │
+│ 01001000 │ 72  │ 'H'  │ 'Char H'        │
+│ 01001001 │ 73  │ 'I'  │ 'Char I'        │
+│ 01001010 │ 74  │ 'J'  │ 'Char J'        │
+│ 01001011 │ 75  │ 'K'  │ 'Char K'        │
+│ 01001100 │ 76  │ 'L'  │ 'Char L'        │
+│ 01001101 │ 77  │ 'M'  │ 'Char M'        │
+└──────────┴─────┴──────┴─────────────────┘
+      </pre>
+      <pre>
+┌──────────┬─────┬──────┬─────────────────┐
+│  binary  │ dec │ char │ name            │
+├──────────┼─────┼──────┼─────────────────┤
+│ 01001110 │ 78  │ 'N'  │ 'Char N'        │
+│ 01001111 │ 79  │ 'O'  │ 'Char O'        │
+│ 01010000 │ 80  │ 'P'  │ 'Char P'        │
+│ 01010001 │ 81  │ 'Q'  │ 'Char Q'        │
+│ 01010010 │ 82  │ 'R'  │ 'Char R'        │
+│ 01010011 │ 83  │ 'S'  │ 'Char S'        │
+│ 01010100 │ 84  │ 'T'  │ 'Char T'        │
+│ 01010101 │ 85  │ 'U'  │ 'Char U'        │
+│ 01010110 │ 86  │ 'V'  │ 'Char V'        │
+│ 01010111 │ 87  │ 'W'  │ 'Char W'        │
+│ 01011000 │ 88  │ 'X'  │ 'Char X'        │
+│ 01011001 │ 89  │ 'Y'  │ 'Char Y'        │
+│ 01011010 │ 90  │ 'Z'  │ 'Char Z'        │
+│ 01011011 │ 91  │ '['  │ 'Left bracket'  │
+│ 01011100 │ 92  │ '\\' │ 'Backslash'     │
+│ 01011101 │ 93  │ ']'  │ 'Right bracket' │
+│ 01011110 │ 94  │ '^'  │ 'Caret'         │
+│ 01011111 │ 95  │ '_'  │ 'Underscore'    │
+│ 01100000 │ 96  │ '`'  │ 'Grave accent'  │
+│ 01100001 │ 97  │ 'a'  │ 'Char a'        │
+│ 01100010 │ 98  │ 'b'  │ 'Char b'        │
+│ 01100011 │ 99  │ 'c'  │ 'Char c'        │
+│ 01100100 │ 100 │ 'd'  │ 'Char d'        │
+│ 01100101 │ 101 │ 'e'  │ 'Char e'        │
+│ 01100110 │ 102 │ 'f'  │ 'Char f'        │
+│ 01100111 │ 103 │ 'g'  │ 'Char g'        │
+│ 01101000 │ 104 │ 'h'  │ 'Char h'        │
+│ 01101001 │ 105 │ 'i'  │ 'Char i'        │
+│ 01101010 │ 106 │ 'j'  │ 'Char j'        │
+│ 01101011 │ 107 │ 'k'  │ 'Char k'        │
+│ 01101100 │ 108 │ 'l'  │ 'Char l'        │
+│ 01101101 │ 109 │ 'm'  │ 'Char m'        │
+│ 01101110 │ 110 │ 'n'  │ 'Char n'        │
+│ 01101111 │ 111 │ 'o'  │ 'Char o'        │
+│ 01110000 │ 112 │ 'p'  │ 'Char p'        │
+│ 01110001 │ 113 │ 'q'  │ 'Char q'        │
+│ 01110010 │ 114 │ 'r'  │ 'Char r'        │
+│ 01110011 │ 115 │ 's'  │ 'Char s'        │
+│ 01110100 │ 116 │ 't'  │ 'Char t'        │
+│ 01110101 │ 117 │ 'u'  │ 'Char u'        │
+│ 01110110 │ 118 │ 'v'  │ 'Char v'        │
+│ 01110111 │ 119 │ 'w'  │ 'Char w'        │
+│ 01111000 │ 120 │ 'x'  │ 'Char x'        │
+│ 01111001 │ 121 │ 'y'  │ 'Char y'        │
+│ 01111010 │ 122 │ 'z'  │ 'Char z'        │
+│          │     │      │                 │
+└──────────┴─────┴──────┴─────────────────┘
+      </pre>
+    </div>
+    <div class="container hidden-print">
+      <textarea id="text-in" type="textarea"></textarea>
+    </div>
+    <div style="break-after: always;"></div>
+    <h1 class="title binary-title">ASCII Challenge</h1>
+    <div class="container">
+      <pre id="binary-out"></pre>
+    </div>
+    <script>
+      const stringToBinary = (string) => {
+        let outputs = []
+        for (const char of string.split('')) {
+          let binaryString = char.charCodeAt(0).toString(2);
+          while (binaryString.length < 8) {
+              binaryString = '0' + binaryString;
+          }
+          outputs.push(binaryString)
+        }
+        return outputs.join('\n');
+      }
+
+      const writeText = (input) => {
+        document.getElementById("binary-out").innerHTML = stringToBinary(input)
+      }
+      writeText(document.getElementById("text-in").value)
+      document.getElementById("text-in").oninput = e => {
+        const string = e.target.value
+        writeText(string)
+      }
+    </script>
+  </body>
+</html>
